@@ -3,7 +3,7 @@ title: "Installing NEMO"
 teaching: 5
 exercises: 10
 questions:
-- "How do I install NEMO"
+- "How do I install NEMO (can be skipped)"
 objectives:
 - "First learning objective. (FIXME)"
 keypoints:
@@ -22,7 +22,7 @@ $ ./configure
 {: .language-bash}
 
 ~~~
-lots of output
+lots of output. This will take less than a minute.
 ~~~
 {: .output}
 
@@ -35,7 +35,7 @@ $ make build
 
 
 ~~~
-lots of output
+lots of output. This will take a few minutes.
 ~~~
 {: .output}
 
