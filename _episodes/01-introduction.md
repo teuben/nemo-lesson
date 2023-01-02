@@ -35,7 +35,7 @@ other codes can process that data. We also employ tables in text or CSV format.
 NEMO has a good infrastructure to write new programs.
 
 Although NEMO is no acronym (it's antology is from an attempt to pun nbody to nobody, which
-became NEMO in latin), a good friend could not help himself and dub it *Nobody Must Ever Observe*!
+became NEMO in latin), a good friend could not help himself and dub it *Not Everyone Must Observe* !
 
 {% include links.md %}
 
