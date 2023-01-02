@@ -2,12 +2,15 @@
 title: Setup
 ---
 
-There are no files to setup yet. NEMO has a few small datafiles in the directory **$NEMO/data**.
+NEMO has a few small datafiles in the directory **$NEMO/data**, so there is no need to
+download extra files. In addition, data can be easily created on the fly. See below
+for an example.
 
 ### Generate your own data
 
-In general it is easy to generate data from NEMO, here is an example
-to view a 10-body Plummer sphere using **tsf**
+In general it is easy to generate data from NEMO. Here is an example
+to print the phase space coordinated of
+a 10-body Plummer *sphere* using **snapprint**
 
 ~~~
 $ mkplummer - 10 seed=123 | snapprint -
