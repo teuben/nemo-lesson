@@ -43,7 +43,17 @@ tsf in=??? maxprec=false maxline=4 allline=false indent=2 margin=72 item= xml=f 
 ~~~
 {: .output}
 
-Your output might be a little different from the version when this manual was written.
+The order of the keywords can be important, as the *keyword=* portion can be left off if given
+in this order. However, from the moment a keyword is named, they all need to be named. python
+has a similar philosphy.
+
+~~~
+$ tsf foo.dat true 10 margin=80 item=Image
+~~~
+{: .language-bash}
+
+is an example of such a shortcut.
+
 
 > ## Getting More Help
 >
