@@ -11,8 +11,11 @@ keypoints:
 - "Updating NEMO"
 ---
 
+## Installation
 
-## Installing from github
+Obviously this episode can be skipped if somebody has already pre-installed NEMO for you.
+
+### Installing from github
 
 The simplest will be
 ~~~
@@ -48,7 +51,7 @@ lots of output. This will take a few minutes.
 
 
 
-## Loading NEMO
+### Loading NEMO in your Shell
 
 NEMO is now ready to be loaded in the shell, as we discussed in the previous episode:
 
@@ -63,7 +66,7 @@ $ source nemo_start.sh
 
 
 
-## Checking
+### Checking NEMO
 
 A regression test is useful to see if some important tools are working correctly, not only
 if they work, but also if they give the answer we expect them to give.
@@ -122,9 +125,11 @@ need to be consulted to see what the failure was.
 
 
 
-## Benchmark
+### Benchmarking
 
+How fast is your computer?
 To get an idea how fast your computing platform is, we have deviced a **NEMOBENCH5** benchmark
+which is an indication of the *"speed"* of NEMO
 
 ~~~
 $ make bench5
@@ -151,13 +156,13 @@ would take 5sec CPU on a i5-1135G7 intel CPU, to which the NEMOBENCH5 value
 was normalized to 1000.
 
 
-## Updating NEMO
+### Updating NEMO
 
 Once NEMO has been installed, and assuming this has been done with **git**, there are two useful
 things to know about applying an update.
 
 
-### A single NEMO program (tsf)
+#### 1. A single NEMO program (tsf)
 
 In the case you have been told a single program was updated, you can use the
 **mknemo** command
@@ -170,15 +175,19 @@ $ mknemo -u tsf
 ~~~
 {: .language-bash}
 
-### All of NEMO
+#### 2. All of NEMO
 
-In case there are many updates, it is best to update NEMO internally:
+In case there are many updates, it is best to update NEMO internally.  For most situations
+this will be:
 
 ~~~
 $ cd $NEMO
+$ git pull
 $ make rebuild
 ~~~
 {: .language-bash}
+
+as before, this rebuild will take a few minutes.
 
 
 
