@@ -1,18 +1,20 @@
 ---
 title: "NEMO's command line interface (CLI)"
 teaching: 5
-exercises: 10
+exercises: 5
 questions:
 - "How do I use NEMO from the command line"
 objectives:
-- "First learning objective. (FIXME)"
+- "Learning NEMO command line interface"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Run a NEMO command"
+- "Get help from a NEMO command"
 ---
 
 
 Any NEMO command can be run from the command line. Here is the **tsf** (*"type structured file"*) program,
-which would display the contents of NEMO's binary files in some human readable way
+which would display the contents of NEMO's binary files in some human readable way. So lets try issuing
+the command
 
 ~~~
 $ tsf 
@@ -27,7 +29,7 @@ type contents of a (binary) structured file
 ~~~
 {: .output}
 
-but
+so obviously it needs some arguments. And there some reminders on how and where to get more help:
 
 ~~~
 $ tsf --help
@@ -40,6 +42,8 @@ give
 tsf in=??? maxprec=false maxline=4 allline=false indent=2 margin=72 item= xml=f octal=f VERSION=3.3c
 ~~~
 {: .output}
+
+Your output might be a little different from the version when this manual was written.
 
 > ## Getting More Help
 >
@@ -77,6 +81,40 @@ tsf in=??? maxprec=false maxline=4 allline=false indent=2 margin=72 item= xml=f 
 > > 
 > >         DESCRIPTION
 > >              tsf types  the contents of a structured binary file ...
+> >
+> {: .solution}
+{: .challenge}
+
+Such a *Unix manual page* - short of reading the source code - will have the most information,
+including examples, and sometimes a TLDR section.
+
+> ## Source Code?
+>
+>  Ultimately the best documentation can be the source code. In the remainder of this episode
+>  you will discover how to easily find and look at the source code
+>
+{: .callout}
+
+
+> ## mknemo
+>
+> The **mknemo** command will help in updating NEMO when new code is available
+>
+>       mknemo tsf
+>
+> will not only compile a new version of the **tsf** program, but also show where the
+> source code lives. Have a look at the source code with your favorite Unix command or editor.
+>
+> > ## Solution
+> >
+> >       MKNEMO> Searching tsf.c: 
+> >       found one: /home/teuben/NEMO/nemo/src/kernel/io/tsf.c
+> >       gcc -g -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE  -fpic -rdynamic  -Dlinux -DSYSV  -I/home/teuben/NEMO/nemo/inc -I/home/teuben/NEMO/nemo/lib -I/home/teuben/NEMO/nemo/opt/include -I/usr/include/hdf   -Wall -Wimplicit-function-declaration  -D_GNU_SOURCE -std=c99  -o tsf tsf.c -L/home/teuben/NEMO/nemo/lib -L/home/teuben/NEMO/nemo/opt/lib          -lnemo -ldl  -lreadline -lhistory -lncurses `pkg-config --libs cfitsio` -lm   -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -lgfortran -lm -lquadmath 
+> >
+> >
+> > On the 2nd line you will see the filename, so in my case I can do
+> > 
+> >        more /home/teuben/NEMO/nemo/src/kernel/io/tsf.c
 > >
 > {: .solution}
 {: .challenge}

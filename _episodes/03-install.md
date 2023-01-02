@@ -5,9 +5,10 @@ exercises: 10
 questions:
 - "How do I install NEMO (can be skipped)"
 objectives:
-- "First learning objective. (FIXME)"
+- "Installing NEMO"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Installing NEMO"
+- "Updating NEMO"
 ---
 
 
@@ -133,6 +134,35 @@ are better. This **NEMOBENCH5** was modeled after the idea of
 **geekbench5**, in our case each of the codes was tuned such that it
 would take 5sec CPU on a i5-1135G7 intel CPU, to which the NEMOBENCH5 value
 was normalized to 1000.
+
+## Updating NEMO
+
+Once NEMO has been installed, and assuming this has been done with **git**, there are two useful
+things to know about applying an update.
+
+### One program
+
+In the case you have been told a single program was updated, you can issue a command
+to update the source code and compile. This command can be given from any directory,
+no need to change directory somewhere in NEMO. Viz.
+
+~~~
+$ mknemo -u tsf
+~~~
+{: .language-bash}
+
+
+### Two
+
+In case there are many updates, it is best to update NEMO internally:
+
+~~~
+$ cd $NEMO
+# make rebuild
+~~~
+{: .language-bash}
+
+
 
 {% include links.md %}
 
