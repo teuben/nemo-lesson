@@ -55,8 +55,12 @@ Your output might be a little different from the version when this manual was wr
 >
 > > ## Solution
 > > The **help=h** will give you a line by line summary of the keyword, some one-line help
-> > and the default in square brackets:
-> >
+> > and the default in square brackets.
+> > ~~~
+> >          tsf help=h
+> > ~~~
+> > {: .language-bash}
+> > ~~~
 > >          margin           : righthand margin  [72]
 > >          in               : input file name  [???]
 > >          maxprec          : print nums with max precision  [false]
@@ -68,8 +72,14 @@ Your output might be a little different from the version when this manual was wr
 > >          xml              : output data in XML format? (experimental) [f]
 > >          octal            : Force integer output in octal again? [f]
 > >          VERSION          : 3-feb-2014 PJT  [3.3c]
-> >
+> > ~~~
+> > {: .output}
 > > The **help=M** will give you a classic unix *man page*
+> > ~~~
+> >          tsf help=h
+> > ~~~
+> > {: .language-bash}
+> > ~~~
 > >
 > >         TSF(1NEMO)
 > > 
@@ -80,8 +90,10 @@ Your output might be a little different from the version when this manual was wr
 > >              tsf in=file [parameter=value] ...
 > > 
 > >         DESCRIPTION
-> >              tsf types  the contents of a structured binary file ...
-> >
+> >              tsf types  the contents of a structured binary file . . .
+> >         . . .
+> > ~~~
+> > {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -99,23 +111,29 @@ including examples, and sometimes a TLDR section.
 > ## mknemo
 >
 > The **mknemo** command will help in updating NEMO when new code is available
->
+> ~~~
 >       mknemo tsf
+> ~~~
+> {: .language-bash}
 >
 > will not only compile a new version of the **tsf** program, but also show where the
 > source code lives. Have a look at the source code with your favorite Unix command or editor.
 >
 > > ## Solution
 > >
+> > ~~~
 > >       MKNEMO> Searching tsf.c: 
 > >       found one: /home/teuben/NEMO/nemo/src/kernel/io/tsf.c
 > >       gcc -g -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE  -fpic -rdynamic  -Dlinux -DSYSV  -I/home/teuben/NEMO/nemo/inc -I/home/teuben/NEMO/nemo/lib -I/home/teuben/NEMO/nemo/opt/include -I/usr/include/hdf   -Wall -Wimplicit-function-declaration  -D_GNU_SOURCE -std=c99  -o tsf tsf.c -L/home/teuben/NEMO/nemo/lib -L/home/teuben/NEMO/nemo/opt/lib          -lnemo -ldl  -lreadline -lhistory -lncurses `pkg-config --libs cfitsio` -lm   -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -lgfortran -lm -lquadmath 
 > >
-> >
+> > ~~~
+> > {: .output}
 > > On the 2nd line you will see the filename, so in my case I can do
 > > 
+> > ~~~
 > >        more /home/teuben/NEMO/nemo/src/kernel/io/tsf.c
-> >
+> > ~~~
+> > {: .language-bash}
 > {: .solution}
 {: .challenge}
 
