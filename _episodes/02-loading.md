@@ -1,5 +1,5 @@
 ---
-title: "Loading"
+title: "Loading NEMO"
 teaching: 5
 exercises: 5
 questions:
