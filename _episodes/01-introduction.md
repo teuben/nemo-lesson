@@ -18,24 +18,24 @@ tackled the problem how to compute the orbits of stars and planets
 under their common force of gravity: the N-body problem.
 
 The first programs were written in FORTRAN (von Hoerner, Aarseth, van Albada and many others),
-and we have some of those available to experiment with in NEMO!
+and we have some of those available for you to experiment with in NEMO!
 
 ### NEMO
 
 NEMO is a software environment to enable you to do Stellar Dynamics in general and the N-body problem
 in particular. It has several hundred programs to initialize stellar N-body systems, integrate them
-in time, study their orbits, convert them to images and compare them to observations etc.etc.
+in time, study their orbits, convert them to images, and compare them to observations etc.etc.
 
-You will be writing scripts to orchestrate a simulation and their analysis. We have examples
-in csh, bash and python.
+You will probably be writing scripts to orchestrate a simulation and perform
+an analysis. We have examples in bash, csh, and python.
 
 NEMO has excellent programs to import data from other codes, as well as export data such that
-other codes can process that data. We also employ tables in text or CSV format.
+other codes can process our data. We also employ tables in text or CSV format, often an
+end-point before a plot is made. NEMO also has a good infrastructure to write new programs.
 
-NEMO has a good infrastructure to write new programs.
-
-Although NEMO is no acronym (it's antology is from an attempt to pun nbody to nobody, which
-became NEMO in latin), a good friend could not help himself and dub it *Not Everyone Must Observe* !
+Although NEMO is no acronym (its etymology is from an attempt to pun nbody to nobody, which
+became NEMO in latin), a good friend could not help himself and dub it *Not Everyone Must Observe*,
+in the vain of this being the first theory package.
 
 {% include links.md %}
 
