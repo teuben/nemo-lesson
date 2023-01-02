@@ -22,7 +22,9 @@ $ tsf in=p10.dat
 ~~~
 {: .language-bash}
 
-but since these are the first keywords, it's much easier to skip the *keyword=* portion:
+but since the first two keywords are in order, it's much easier to skip the *keyword=* portion for
+those. The seed= keyword is much further down the list, so we explicitly pass it with the keyword
+name:
 
 ~~~
 $ mkplummer p10.dat 10 seed=123

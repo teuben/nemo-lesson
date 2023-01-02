@@ -43,16 +43,20 @@ tsf in=??? maxprec=false maxline=4 allline=false indent=2 margin=72 item= xml=f 
 ~~~
 {: .output}
 
-The order of the keywords can be important, as the *keyword=* portion can be left off if given
-in this order. However, from the moment a keyword is named, they all need to be named. python
-has a similar philosphy.
 
-~~~
-$ tsf foo.dat true 10 margin=80 item=Image
-~~~
-{: .language-bash}
 
-is an example of such a shortcut.
+> ## Keyword Order
+>
+> The order of the keywords can be important, as the *keyword=* portion can be left off if given
+> in this order. However, from the moment a keyword is named, they all need to be named. python
+> has a similar philosphy. An example of this:
+> 
+> ~~~
+> $ tsf foo.dat true 10 margin=80 item=Image
+> ~~~
+> {: .language-bash}
+> 
+{: .callout}
 
 
 > ## Getting More Help
