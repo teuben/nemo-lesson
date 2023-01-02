@@ -5,16 +5,18 @@ exercises: 5
 questions:
 - "What kind of files does NEMO use"
 objectives:
-- "Files"
+- "File Types"
 - "Unix Pipes"
 keypoints:
-- "Files"
+- "File Types"
 - "Unix pipes"
 ---
 
 
 NEMO stores most of its data in binary format.  We have already see that the **tsf** program can
-display such data
+display such data. These files are hierarchical, named, and type tagged to promote interoperability.
+Later in this episode we will see there are a few types (e.g. SnapShot, Orbit, Image). Here is
+a SnapShot:
 
 ~~~
 $ mkplummer out=p10.dat nbody=10 seed=123
@@ -64,6 +66,55 @@ $ mkplummer - 10 seed=123 | tsf -
 
 and it should give exactly the same output, since the same **seed=123** was used.
 
+
+
+
+
+
+
+
+
+## Example Data Files
+
+Here we give some examples of some file types we have or can generate in NEMO. We invite you
+to explore them.
+
+### Binary Tables
+
+There are some binary tables to store a distribution function for initializing N-body realizations
+of certain model galaxies.
+
+~~~
+$ tsf $NEMODAT/k5isot.dat
+~~~
+{: .language-bash}
+
+### Snapshot
+
+We have already seen this one. They are used to store a snapshot of an N-body simulation.
+
+~~~
+$ mkplummer - 10 seed=123 | tsf -
+~~~
+{: .language-bash}
+
+### Image
+
+~~~
+$ ccdgen - noise 1,0.1 | tsf -
+~~~
+{: .language-bash}
+
+
+### Orbit
+
+~~~
+$ mkorbit - x=1 vy=1 potname=plummer | tsf -
+~~~
+{: .language-bash}
+
+this will just be a single point (initial conditions), but in general an Orbit will
+store many samples in time, much like a series of snapshots for an N-body simulation.
 
 
 {% include links.md %}
