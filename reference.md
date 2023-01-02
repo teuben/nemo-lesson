@@ -15,7 +15,7 @@ orbit
 :	for a given particle a time series of various body variables
 
 potential descriptor
-:       on the CLI the triple {potname=,potpars=,potfile=} that describes an analytical potential
+:       on the CLI the triple {potname=,potpars=,potfile=} keywords that describes an analytical potential
 
 snapshot
 :	at a given time a list of various body variables (mass, position, velocity, energy etc.)

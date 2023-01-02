@@ -91,7 +91,9 @@ $ tsf $NEMODAT/k5isot.dat
 
 ### Snapshot
 
-We have already seen this one. They are used to store a snapshot of an N-body simulation.
+We have already seen this one. They are used to store a
+[snapshot]({{ page.root }}/reference.html#snapshot)
+of an N-body simulation.
 
 ~~~
 $ mkplummer - 10 seed=123 | tsf -
@@ -115,6 +117,9 @@ $ mkorbit - x=1 vy=1 potname=plummer | tsf -
 
 this will just be a single point (initial conditions), but in general an Orbit will
 store many samples in time, much like a series of snapshots for an N-body simulation.
+This example also shows the use of a
+[potential descriptor]({{ page.root }}/reference.html#potential descriptor)
+with the **potname=** keyword.
 
 
 {% include links.md %}
