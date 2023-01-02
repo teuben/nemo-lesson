@@ -39,9 +39,23 @@ lots of output. This will take a few minutes.
 ~~~
 {: .output}
 
+
+## Loading NEMO
+
+NEMO is now ready to be loaded in the shell, as we discussed before:
+
+~~~
+$ source nemo_start.sh
+~~~
+{: .language-bash}
+
+
+
+
+
 ## Checking
 
-A regression test
+A regression test is useful to see if some important tools are working correctly
 
 ~~~
 $ make check
@@ -96,7 +110,7 @@ need to be consulted to see what the failure was.
 
 ## Benchmark
 
-To get an idea how fast your computing platform is
+To get an idea how fast your computing platform is, we have devices the **NEMOBENCH5** benchmark
 
 ~~~
 $ make bench5
@@ -105,20 +119,20 @@ $ make bench5
 
 
 ~~~
-CPU_USAGE  directcode  :  4.76  4.76  0.00  0.00  0.00  1718199003
-CPU_USAGE  gyrfalcON   :  4.86  4.86  0.00  0.00  0.00  1718199480
-CPU_USAGE  orbint      :  4.75  4.74  0.00  0.00  0.00  1718199974
-CPU_USAGE  potcode     :  4.70  4.68  0.01  0.00  0.00  1718200449
-CPU_USAGE  treecode1   :  4.67  4.66  0.00  0.00  0.00  1718200919
-NEMOBENCH5 score:   1053.07
-~~~
+CPU_USAGE  directcode  :  4.66  4.65  0.00  0.00  0.00  1718721840
+CPU_USAGE  gyrfalcON   :  4.91  4.91  0.00  0.00  0.00  1718722307
+CPU_USAGE  hackcode1   :  4.93  4.92  0.00  0.00  0.00  1718722799
+CPU_USAGE  orbint      :  4.74  4.74  0.00  0.00  0.00  1718723292
+CPU_USAGE  potcode     :  4.67  4.65  0.01  0.00  0.00  1718723767
+CPU_USAGE  treecode1   :  4.61  4.61  0.00  0.00  0.00  1718724234
+NEMOBENCH5 score:   1051.89
 {: .output}
 
-On this particular machine a score of **1053** was obtained. Larger values
+On this particular machine a score of **1052** was obtained. Larger values
 are better. This **NEMOBENCH5** was modeled after the idea of
 **geekbench5**, in our case each of the codes was tuned such that it
-would take 5sec CPU on a i5-1135G7 intel CPU, to which the NEMOBENCH
-was normalized to 1000
+would take 5sec CPU on a i5-1135G7 intel CPU, to which the NEMOBENCH5 value
+was normalized to 1000.
 
 {% include links.md %}
 
