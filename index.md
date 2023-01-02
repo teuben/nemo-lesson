@@ -11,7 +11,9 @@ NEMO: home page introduction (FIXME)
 
 > ## Prerequisites
 >
-> a NEMO install (FIXME)
+> a unix (like) environment with an interactive terminal (Linux, Mac, Windows/WSL)
+> an installed version of NEMO (though you can install it too)
+
 {: .prereq}
 
 {% include links.md %}
