@@ -12,6 +12,8 @@ keypoints:
 ---
 In this lesson we will load NEMO into your shell environment.
 
+### Loading NEMO
+
 It is assumed somebody
 has already installed NEMO. The only thing we need to know is the root directory where
 NEMO has been installed.
@@ -26,6 +28,25 @@ $ source /opt/nemo_4.1.1/nemo_start.sh
 so really all you need is to find the location of the
 **nemo_start.sh** file.  There is a similar file for the **csh**
 shell, for the die-hards.
+
+Obviously you should test if NEMO commands are now available. The **tsf** (Type Structured File) program
+is the de-facto test for this.
+
+~~~
+$ tsf
+~~~
+{: .language-bash}
+
+with
+
+~~~
+Insufficient parameters, try 'help=', 'help=?' or 'help=h' or 'man tsf',
+Formatted man page might also be here: https://teuben.github.io/nemo/man_html/tsf.1.html
+Usage: tsf in=??? ...
+type contents of a (binary) structured file
+~~~
+{: .output}
+
 
 
 > ## Making it persistent
