@@ -24,12 +24,12 @@ NEMO: home page introduction
 > Not neccessarely prerequisites, the following Software Carpentry lessons will likely
 > benefit you in your work with NEMO:
 >
-> * [The Unix Shell](https://swcarpentry.github.io/shell-novice) 
-> * [Extra Unix Shell Material](https://carpentries-incubator.github.io/shell-extras)
-> * [Version control with git](https://swcarpentry.github.io/git-novice)
-> * [Automation and Make](http://swcarpentry.github.io/make-novice)
-> * [Good Enough Practices in Scientific Computing](https://carpentries-incubator.github.io/good-enough-practices)
-> * [Introduction to High-Performance Computing](https://carpentries-incubator.github.io/hpc-intro)
+> 1. [The Unix Shell](https://swcarpentry.github.io/shell-novice) 
+> 2. [Extra Unix Shell Material](https://carpentries-incubator.github.io/shell-extras)
+> 3. [Version control with git](https://swcarpentry.github.io/git-novice)
+> 4. [Automation and Make](http://swcarpentry.github.io/make-novice)
+> 5. [Good Enough Practices in Scientific Computing](https://carpentries-incubator.github.io/good-enough-practices)
+> 6. [Introduction to High-Performance Computing](https://carpentries-incubator.github.io/hpc-intro)
 > 
 {: .prereq}
 
