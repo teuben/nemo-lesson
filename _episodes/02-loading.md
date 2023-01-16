@@ -5,11 +5,12 @@ exercises: 5
 questions:
 - "How do I use NEMO in a Unix Shell"
 objectives:
-- "Getting started with NEMO"
-keypoints:
 - "Loading NEMO interactively in your shell"
 - "Ensure NEMO is present each time you start a new shell"
+keypoints:
+- "Getting started with NEMO"
 ---
+
 In this lesson we will load NEMO into your shell environment.
 
 ### Loading NEMO
@@ -18,7 +19,7 @@ It is assumed somebody
 has already installed NEMO. The only thing we need to know is the root directory where
 NEMO has been installed.
 So let us assume somebody told us that NEMO has been installed in
-**/opt/nemo_4.1.1**  The following command would then load NEMO into your **bash** shell
+**/opt/nemo_4.1.1**  The following command would then load NEMO in your **bash** shell
 
 ~~~
 $ source /opt/nemo_4.1.1/nemo_start.sh
@@ -37,7 +38,6 @@ $ tsf
 ~~~
 {: .language-bash}
 
-with
 
 ~~~
 Insufficient parameters, try 'help=', 'help=?' or 'help=h' or 'man tsf',

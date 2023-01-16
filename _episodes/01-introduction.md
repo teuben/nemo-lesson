@@ -22,7 +22,7 @@ and we have some of those available for you to experiment with in NEMO!
 
 ### NEMO
 
-NEMO is a software environment to enable you to do Stellar Dynamics in general and the N-body problem
+NEMO is a software environment to enable you to study Stellar Dynamics in general and the N-body problem
 in particular. It has several hundred programs to initialize stellar N-body systems, integrate them
 in time, study their orbits, convert them to images, and compare them to observations etc.etc.
 
@@ -33,9 +33,9 @@ NEMO has excellent programs to import data from other codes, as well as export d
 other codes can process our data. We also employ tables in text or CSV format, often an
 end-point before a plot is made. NEMO also has a good infrastructure to write new programs.
 
-Although NEMO is no acronym (its etymology is from an attempt to pun nbody to nobody, which
+Although NEMO is not an acronym (its etymology is from an attempt to pun nbody to nobody, which
 became NEMO in latin), a good friend could not help himself and dub it *Not Everyone Must Observe*,
-in the vain of this being the first theory package.
+in the vain of this being the first theory package next to a few observers packages back in 1986.
 
 {% include links.md %}
 
